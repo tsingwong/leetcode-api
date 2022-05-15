@@ -1,8 +1,17 @@
 <script setup>
 const version = 2 + 1;
+const route = useRoute();
 </script>
 <template>
-  <NuxtLayout>
+  <NuxtLayout name="default">
+    <nav class="flex align-center gap-4 p-4">
+      <NuxtLink to="/default"> Default </NuxtLink>
+      <NuxtLink to="/forbidden"> Forbidden </NuxtLink>
+      <NuxtLink to="/redirect"> Redirect </NuxtLink>
+    </nav>
     <NuxtPage />
+    <div class="text-center p-4 op-50">
+      current route : <code>{{ route.path }}</code>
+    </div>
   </NuxtLayout>
 </template>
