@@ -5,7 +5,7 @@
     <p>Named export <code>useC</code> : {{ c }}</p>
     <p>Named export <code>useD</code> : {{ d }}</p>
     <p>Default export <code>useFoo</code> : {{ foo }}</p>
-    <!-- <a-input v-model:value="foo"></a-input> -->
+    <a-input v-model:value="foo"></a-input>
   </div>
 </template>
 
