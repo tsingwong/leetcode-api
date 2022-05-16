@@ -1,3 +1,6 @@
 <template>
-  <div>index</div>
+  <div>
+    <div>index</div>
+    <NuxtWithPrefix />
+  </div>
 </template>

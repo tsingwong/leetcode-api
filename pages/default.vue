@@ -1,3 +1,7 @@
 <template>
-  <div>Home</div>
+  <div>
+    Home
+    <ParentFolderHello></ParentFolderHello>
+    <ClientAndServer></ClientAndServer>
+  </div>
 </template>
