@@ -1,16 +1,11 @@
 <template>
   <div>
-    <p>Fetched from <pre>/api/mountain</pre>: {{ mountains }}</p>
-
+    <p>Fetched from {{ mountains }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-
-  const mountains = await useAsyncData("mountains",  () =>$fetch("/api/mountain"))
-  console.log(mountains)
+  const mountains = await useAsyncData("mountains", () => $fetch("/api/mountain"))
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

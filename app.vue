@@ -12,6 +12,7 @@
       <NuxtLink to="/use-foo"> UseFoo </NuxtLink>
       <NuxtLink to="/parent"> Parent </NuxtLink>
       <NuxtLink to="/mountain"> Mountains </NuxtLink>
+      <NuxtLink to="/counter"> Counter </NuxtLink>
       <button @click="$router.push(`/parent/reload-${(Math.random() * 100).toFixed()}`)">Keyed child</button>
       <button @click="$router.push(`/parent/static-${(Math.random() * 100).toFixed()}`)">Non-keyed child</button>
       <a-button type="primary">Here we are</a-button>
